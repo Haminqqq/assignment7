@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Parallax vertical</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/shadow.css">
+
+
+    <style>
+        #div1 {
+            background-image: url("https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297327/%E8%BE%9B%E6%99%AE%E6%A3%AE_0001_%E8%83%8C%E6%99%AF-%E6%8B%B7%E8%B2%9D_mmw8x9.png");
+        }
+
+        #div2 {
+            background-image: url("https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297333/%E9%A6%AC%E5%8A%9B%E6%AD%902_0005_%E5%9C%96%E5%B1%A4-2_bmxtnj.png");
+        }
+        
+        #div3, #div4 {
+            background-image: url("https://res.cloudinary.com/dvmvzmng3/image/upload/v1641305809/%E9%A6%AC%E5%8A%9B%E6%AD%902%E8%83%8C%E6%99%AF_kkzbnl.jpg");
+        }
+        
+        #div1, #div2, #div3, #div4{
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div style="background-color:antiquewhite;height:50vh"></div>
+    <div id="div1" class="innershadow1" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-top=0 data-top2=50 data-left=20 data-left2=50  src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297326/%E8%BE%9B%E6%99%AE%E6%A3%AE_0000_%E5%9C%96%E5%B1%A4-4_nrs9df.png" style="position:absolute;width:28%;top:20%;left:50%;">
+        <img class="scrollable dropshadow1" data-top=0 data-top2=50 data-left=28 data-left2=28 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641299449/%E6%B2%B3%E9%A6%AC_0000_0714A0BB-3F66-4D4A-880F-8186CCCABB2D_aok6hf.png" style="position:absolute;width:70%;">
+    </div>
+    <div style="background-color:grey;height:100vh"></div>
+
+    <div id="div2" class="innershadow1" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-top=20 data-top2=70 data-left=0 data-left2=45 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297326/%E9%A6%AC%E5%8A%9B%E6%AD%901_0001_%E5%9C%96%E5%B1%A4-4_kbjnbc.png" style="position:absolute;width:20%;">
+        <img class="scrollable dropshadow1" data-top=30 data-top2=80 data-left=90 data-left2=60 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297326/%E9%A6%AC%E5%8A%9B%E6%AD%901_0000_%E5%9C%96%E5%B1%A4-5_vcl5ou.png" style="position:absolute;width:10%;">
+    </div>
+    <div style="background-color:grey;height:100vh"></div>
+
+
+    <div id="div3" class="innershadow1" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-left=70 data-left2=70 data-top=0 data-top2=60 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297327/%E9%A6%AC%E5%8A%9B%E6%AD%902_0000_%E6%8F%92%E5%85%A5%E7%9A%84%E5%9C%96%E5%83%8F_qbk1wx.png" style="position:absolute;width:20%;top:50%;left:100%;">
+        <img class="scrollable dropshadow1" data-left=70 data-left2=70 data-top=0 data-top2=50 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297327/%E9%A6%AC%E5%8A%9B%E6%AD%902_0001_%E6%8F%92%E5%85%A5%E7%9A%84%E5%9C%96%E5%83%8F_bge0x5.png" style="position:absolute;width:20%;top:50%;left:100%;">
+        <img class="scrollable dropshadow1" data-left=25 data-left2=20 data-top=30 data-top2=80 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641303028/%E9%A6%99%E8%8F%87_flzawx.png" style="position:absolute;width:100%;top:50%;left:0%;">
+        <img class="scrollable dropshadow1" data-left=10 data-left2=20 data-top=20 data-top2=50 data-width=20 data-width2=40 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641297328/%E9%A6%AC%E5%8A%9B%E6%AD%902_0002_%E5%9C%96%E5%B1%A4-6_cgvt2y.png" style="position:absolute;width:20%;">
+    </div>
+    <div style="background-color:grey;height:100vh"></div>
+    
+    
+    <div id="div4" class="innershadow1" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-left=10 data-left2=10 data-top=0 data-top2=50 src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641305129/%E9%81%8E%E9%97%9C%E6%97%97%E5%AD%90_0001_%E6%8F%92%E5%85%A5%E7%9A%84%E5%9C%96%E5%83%8F_gmovps.png" style="position:absolute;width:90%;">
+        <img class="scrollable dropshadow1" data-left=10 data-left2=10 data-top=0  data-top2=70  src="https://res.cloudinary.com/dvmvzmng3/image/upload/v1641305129/%E9%81%8E%E9%97%9C%E6%97%97%E5%AD%90_0000_%E6%8F%92%E5%85%A5%E7%9A%84%E5%9C%96%E5%83%8F_nlzpux.png" style="position:absolute;width:90%;">
+    </div>
+    <div style="background-color:grey;height:200px;"></div>
+
+    
+
+
+
+    <script>
+        $(document).ready(function() {
+            var winh = $(window).height();
+            $(window).scroll(function() {
+                var scrolled = $(window).scrollTop();
+                $(".scrollable").each(function() {
+                    var parent_pos = $(this).parent().offset().top;
+                    var next_pos = parent_pos + $(this).parent().height();
+                    var parent_scrolled = scrolled - $(this).parent().offset().top;
+                    if (parent_scrolled > 0 && scrolled < next_pos - winh) {
+
+                        if ($(this).attr("data-left")) {
+                            $(this).css('left', (($(this).data('left2') - $(this).data('left')) * parent_scrolled / winh + $(this).data('left')) + '%');
+                        }
+                        if ($(this).attr("data-top")) {
+                            $(this).css('top', (($(this).data('top2') - $(this).data('top')) * parent_scrolled / winh + $(this).data('top')) + '%');
+                        }
+                        if ($(this).attr("data-width")) {
+                            $(this).css('width', (($(this).data('width2') - $(this).data('width')) * parent_scrolled / winh + $(this).data('width')) + '%');
+                        }
+                    }
+                });
+            });//end of win scroll
+        });
+    </script>
+</body>
+
+</html>
